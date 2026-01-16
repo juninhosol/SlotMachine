@@ -69,7 +69,7 @@ def print_slot_machine(columns):
                 
 def deposit():
     while True:
-        amount = input("What would you like to deposit? $")
+        amount = input("How much would you like to deposit? $")
         if amount.isdigit():
             amount = int(amount)
             if amount > 0:
@@ -139,7 +139,7 @@ def main():
             break
         balance += spin(balance)
         
-    print(f"You left with ${balance}")
+    print(f"You left with ${balance}, nice.")
     
     
 main()
